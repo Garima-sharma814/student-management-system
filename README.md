@@ -1,1 +1,1 @@
-Student Management System made with MERN Stack.
+# Student Management System made with MERN Stack.
