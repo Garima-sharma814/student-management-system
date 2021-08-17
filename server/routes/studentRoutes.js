@@ -6,5 +6,4 @@ router.get("/", (req, res) => {
     res.send("This is the home page");
 });
 
-
 export default router;
