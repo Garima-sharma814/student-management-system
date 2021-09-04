@@ -1,0 +1,40 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Student management system made with MERN",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garima-sharma814/student-management-system.git"
+  },
+  "keywords": [
+    "Student-management-system"
+  ],
+  "author": "Garima Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Garima-sharma814/student-management-system/issues"
+  },
+  "homepage": "https://github.com/Garima-sharma814/student-management-system#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^2.3.2"
+  }
+}
