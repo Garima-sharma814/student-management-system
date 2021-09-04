@@ -1,8 +1,9 @@
-import mongoose from "mongoose";
+require("dotenv").config();
+const mongoose = require('mongoose');
 
 module.exports = function studentDB() {
 mongoose
-  .connect("mongodb://localhost:27017/studentDB", {
+  .connect(process.env.connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
