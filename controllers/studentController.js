@@ -22,4 +22,16 @@ const createStudent = async (req, res) => {
   }
 };
 
-module.exports = { getStudents, createStudent };
+const deleteStudent = async (req, res) => {
+  const id = req.params.id;
+
+  try { 
+    await StudentData.findByIdAndRemove(id).exec();
+    res.send("Succesfully deleted");
+  }
+  catch (err) {
+    console.log(err);
+  }
+};
+
+module.exports = { getStudents, createStudent, deleteStudent };
