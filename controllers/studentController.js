@@ -1,6 +1,7 @@
 const Student= require("../models/studentModel");
 
 const getStudents = async (req, res) => {
+  // res.send(`<h1>hey this is student page</h1>`);
   try {
     const allStudents = await Student.find();
     res.status(200).json(allStudents);
