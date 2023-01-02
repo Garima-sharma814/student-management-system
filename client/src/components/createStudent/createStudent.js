@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import axios from "axios";
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import axios from 'axios';
+import React, { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& > *": {
+    '& > *': {
       margin: theme.spacing(1),
-      width: "25ch",
+      width: '25ch',
     },
   },
 }));
@@ -17,14 +17,14 @@ export default function AddStudent() {
   const classes = useStyles();
   const [student, setStudent] = useState({
     regId: 0,
-    name: "",
-    course: "",
-    section: "",
+    name: '',
+    course: '',
+    section: '',
   });
   const createStudent = () => {
-    axios.post("http://localhost:5000/students", student).then(()=>{
+    axios.post('http://localhost:80/students', student).then(() => {
       window.location.reload(false);
-    })
+    });
   };
   return (
     <>
@@ -69,3 +69,4 @@ export default function AddStudent() {
     </>
   );
 }
+
